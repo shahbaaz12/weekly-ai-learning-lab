@@ -1,0 +1,24 @@
+# Secrets anywhere in the repository
+**/.env
+**/.env.*
+!**/.env.example
+
+# Per-project Python environments
+**/.venv/
+**/venv/
+
+# Python-generated files
+**/__pycache__/
+*.py[cod]
+
+# Tool-generated files
+**/.pytest_cache/
+**/.mypy_cache/
+
+# Editor and operating-system files
+**/.vscode/
+.DS_Store
+Thumbs.db
+
+#gradio generated files
+**/.gradio/

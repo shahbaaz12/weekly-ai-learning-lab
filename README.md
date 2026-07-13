@@ -26,7 +26,7 @@ Each project has its own `pyproject.toml`, `uv.lock`, `.env.example`, and README
 
 - Python 3.11 or newer
 - [uv](https://docs.astral.sh/uv/) for Python environments and dependencies
-- A Groq API key for projects that call an LLM
+- A **[Groq API key](https://console.groq.com/keys)** *(free to create)* for projects that call an LLM
 
 Check that `uv` is installed:
 
