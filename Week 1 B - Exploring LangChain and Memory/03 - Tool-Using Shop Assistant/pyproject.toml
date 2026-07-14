@@ -1,0 +1,9 @@
+[project]
+name = "03-tool-using-shop-assistant"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "gradio>=6.20.0",
+    "groq>=1.5.0",
+    "python-dotenv>=1.2.2",
+]
