@@ -25,7 +25,7 @@ A Gradio shop chatbot that answers price questions about shoes, hats, bags, shor
 System: You are a shop assistant.
 User: How much are the shoes?
 Assistant: I want to call get_price("shoes").
-Tool: The price of shoes is ₹799.
+Tool: The price of shoes is Rs 799.
 ```
 
 The model does not run your Python function. It only asks to use `get_price`. Your program runs the function locally, then sends its result back to the model.

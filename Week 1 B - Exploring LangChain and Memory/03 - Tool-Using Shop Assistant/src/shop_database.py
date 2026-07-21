@@ -19,4 +19,4 @@ def get_price(item: str) -> str:
     if price is None:
         return f"Sorry, I do not have a price for '{item}'."
 
-    return f"The price of {item} is ₹{price}."
+    return f"The price of {item} is Rs {price}."

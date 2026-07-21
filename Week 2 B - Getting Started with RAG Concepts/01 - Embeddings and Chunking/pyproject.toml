@@ -1,0 +1,8 @@
+[project]
+name = "01-embeddings-and-chunking"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-text-splitters>=1.1.2",
+    "sentence-transformers>=5.6.0",
+]
