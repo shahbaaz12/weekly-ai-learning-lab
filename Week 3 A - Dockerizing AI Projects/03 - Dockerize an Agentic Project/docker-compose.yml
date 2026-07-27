@@ -1,0 +1,23 @@
+services:
+  agent:
+    build: ./agent
+    ports:
+      - "9000:9000"
+    env_file: .env
+    environment:
+      TOOLS_URL: http://tools:7000
+      REDIS_HOST: redis
+    depends_on:
+      - tools
+      - redis
+
+  tools:
+    build: ./tools
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - agent_memory:/data
+
+volumes:
+  agent_memory:
