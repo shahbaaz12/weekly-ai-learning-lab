@@ -22,3 +22,6 @@ Thumbs.db
 
 #gradio generated files
 **/.gradio/
+
+# Local style notes
+STYLE.md
