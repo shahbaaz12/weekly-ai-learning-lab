@@ -44,8 +44,12 @@ Weekly AI Learning Lab/
 ├── Week 7 - Scaling Databases/
 ├── Week 8 - Building an AI Interview Coach/
 │   └── 01 - InterviewIQ Coach Agent/
-└── Week 9 - Automating Triage with LangChain/
-    └── 01 - Shipment Exception Desk/
+├── Week 9 - Automating Triage with LangChain/
+│   └── 01 - Shipment Exception Desk/
+└── Week 10 - Advanced RAG Patterns/
+    ├── 01 - Conversational RAG/
+    ├── 02 - Hybrid RAG/
+    └── 03 - Hierarchical RAG/
 ```
 
 Each project has its own `pyproject.toml` and `uv.lock`, so dependencies stay
@@ -68,6 +72,7 @@ their packages inside Docker images.
 | 7 | Database internals, indexing, replication, partitioning, sharding | Hosted lessons |
 | 8 | A mock-interview coach: tool calling, session memory, aggregation, a UI | OpenAI SDK, Groq, Gradio |
 | 9 | A triage desk: LangChain chains routed by plain Python business rules | LangChain, Groq, Gradio |
+| 10 | Conversational, hybrid, and hierarchical RAG over PDFs and a JSON catalog | Chroma, BM25, LangChain, Groq |
 
 ## Requirements
 
@@ -79,7 +84,7 @@ API keys, by week:
 
 | Key | Needed for |
 |---|---|
-| **[Groq API key](https://console.groq.com/keys)** *(free to create)* | Weeks 1 A, 1 B, 2 A, 2 B, 4 A, 4 B, 8, 9 |
+| **[Groq API key](https://console.groq.com/keys)** *(free to create)* | Weeks 1 A, 1 B, 2 A, 2 B, 4 A, 4 B, 8, 9, 10 |
 | **[Google AI Studio API key](https://aistudio.google.com/app/apikey)** | Week 2 A |
 | **OpenAI API key** | Week 3, projects 2 and 3 |
 | **AWS credentials with Amazon Nova Lite access in Bedrock** | Week 5 A |
@@ -101,7 +106,7 @@ lives in a different place depending on the week:
 | 2 A | Repository root |
 | 2 B | Repository root, plus `02 - Basic RAG with Chroma` |
 | 3 A | Inside `02 - Dockerize an LLM Project` and `03 - Dockerize an Agentic Project` |
-| 4 A, 4 B, 5 A, 8, 9 | In the week folder |
+| 4 A, 4 B, 5 A, 8, 9, 10 | In the week folder |
 
 Every `.env` file is ignored by Git. Commit `.env.example`, never the real key.
 
@@ -137,5 +142,6 @@ docker compose up -d --build
 | 7 | `Week 7 - Scaling Databases/README.md` |
 | 8 | `Week 8 - Building an AI Interview Coach/README.md` |
 | 9 | `Week 9 - Automating Triage with LangChain/README.md` |
+| 10 | `Week 10 - Advanced RAG Patterns/README.md` |
 
 See the README inside each project for its objective, API variables, and examples.
