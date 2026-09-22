@@ -46,10 +46,12 @@ Weekly AI Learning Lab/
 │   └── 01 - InterviewIQ Coach Agent/
 ├── Week 9 - Automating Triage with LangChain/
 │   └── 01 - Shipment Exception Desk/
-└── Week 10 - Advanced RAG Patterns/
+├── Week 10 - Advanced RAG Patterns/
     ├── 01 - Conversational RAG/
     ├── 02 - Hybrid RAG/
     └── 03 - Hierarchical RAG/
+└── Week 11 - Evaluating LLM Behaviour/
+    └── 01 - LLM Evaluation Bench/
 ```
 
 Each project has its own `pyproject.toml` and `uv.lock`, so dependencies stay
@@ -73,6 +75,7 @@ their packages inside Docker images.
 | 8 | A mock-interview coach: tool calling, session memory, aggregation, a UI | OpenAI SDK, Groq, Gradio |
 | 9 | A triage desk: LangChain chains routed by plain Python business rules | LangChain, Groq, Gradio |
 | 10 | Conversational, hybrid, and hierarchical RAG over PDFs and a JSON catalog | Chroma, BM25, LangChain, Groq |
+| 11 | Measure prompt quality, token cost, and resistance to incorrect user pressure | OpenAI SDK |
 
 ## Requirements
 
@@ -106,7 +109,7 @@ lives in a different place depending on the week:
 | 2 A | Repository root |
 | 2 B | Repository root, plus `02 - Basic RAG with Chroma` |
 | 3 A | Inside `02 - Dockerize an LLM Project` and `03 - Dockerize an Agentic Project` |
-| 4 A, 4 B, 5 A, 8, 9, 10 | In the week folder |
+| 4 A, 4 B, 5 A, 8, 9, 10, 11 | In the week folder |
 
 Every `.env` file is ignored by Git. Commit `.env.example`, never the real key.
 
@@ -143,5 +146,6 @@ docker compose up -d --build
 | 8 | `Week 8 - Building an AI Interview Coach/README.md` |
 | 9 | `Week 9 - Automating Triage with LangChain/README.md` |
 | 10 | `Week 10 - Advanced RAG Patterns/README.md` |
+| 11 | `Week 11 - Evaluating LLM Behaviour/README.md` |
 
 See the README inside each project for its objective, API variables, and examples.
